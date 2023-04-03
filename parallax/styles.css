@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Times New Roman Italic";
+    font-weight: 400;
+    line-height: 1.8em;
+    color: red;
+    font-style: normal;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+	position:relative;
+	opacity:0.70;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	
+	background-attachment:fixed;
+}
+
+.pimg1{
+	background-image: url("skyart.png");
+	min-height:100%;
+}
+
+.pimg2{
+	background-image: url("hotairballoons.png");
+	min-height:400px;
+}
+
+.pimg3{
+	background-image: url("mountains.png");
+	min-height:400px;
+}
+.pimg4{
+	background-image: url("house.png");
+	min-height:100%;
+}
+.section{
+	text-align:center;
+	padding:50px 80px;
+	
+}
+
+.section-light{
+background-color:#A5BFD3;
+	color:white;
+}
+
+.section-dark{
+	background-color:#A5BFD3;
+	color:white;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+	color:lightcoral;
+    font-size: 36px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-style: italic;	
+}
+
+.ptext .border{
+	background-color:brown;
+	color:aliceblue;
+	padding:20px;
+	
+}
+
+.ptext .border .trans{
+	background-color:transparent;
+}
+a{
+    color: #BF6A6A;
+    list-style-position: outside;	
+}
+@media(max-width:568px){
+	.pimg1 .pimg2 .pimg3 .pimg4{
+		background-attachment:scroll;
+	}
+}
